@@ -9,7 +9,7 @@ import de.devor.entity.model.ColumnType;
  * @author orapka
  *
  */
-class ColumnImpl implements Column {
+public class ColumnImpl implements Column {
 
 	private String name;
 	private int length;

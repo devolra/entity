@@ -8,8 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>de.devor.entity.releng</name>
-	<description>Releng modul for the entity project.</description>
-	
+	<description>Releng modul for the entity project. This is the parent POM for all other modules.</description>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -27,5 +27,13 @@
 		<module>../de.devor.entity.model</module>
 		<module>../de.devor.entity.service</module>
 	</modules>
-	
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
+
 </project>
