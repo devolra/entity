@@ -1,7 +1,0 @@
-# Git doesn't allow the versioning of empty directories.
-# So we add this file to have a non empty directory.
-
-# Ignore all files except this.
-# Must be customized if we have tests for the model.
-*
-!.gitignore
