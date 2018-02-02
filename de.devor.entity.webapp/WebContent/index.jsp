@@ -1,11 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Hello</title>
-	</head>
-	<body>
-		<h1>It works!!</h1>
-	</body>
-</html>
+<jsp:include page="./pages/common/header.jsp"/>		
+		<table class="ui blue inverted celled table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Primary key</th>
+					<th>Indixes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>a_entity</td>
+					<td>The first entity.</td>
+					<td>a_pk</td>
+					<td>a_index_0, a_index_1</td>
+				</tr>
+				<tr>
+					<td>b_entity</td>
+					<td>The second entity.</td>
+					<td>b_pk</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>c_entity</td>
+					<td></td>
+					<td>c_pk</td>
+					<td>c_index_0, c_index_1</td>
+				</tr>
+			</tbody>
+		</table>
+<jsp:include page="./pages/common/footer.jsp"/>
