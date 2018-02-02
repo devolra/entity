@@ -1,10 +1,7 @@
-package de.devor.entity.model.impl;
+package de.devor.entity.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import de.devor.entity.model.Column;
-import de.devor.entity.model.PrimaryKey;
 
 /**
  * Implementation.

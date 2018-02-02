@@ -1,7 +1,4 @@
-package de.devor.entity.model.impl;
-
-import de.devor.entity.model.Column;
-import de.devor.entity.model.ColumnType;
+package de.devor.entity.model;
 
 /**
  * Implementation.

@@ -14,6 +14,10 @@ public interface Entity {
 	
 	public void setName(String name);
 	
+	public String getDescription();
+	
+	public void setDescription(String description);
+	
 	public List<Column> getColumns();
 	
 	public void addColumn(Column column);

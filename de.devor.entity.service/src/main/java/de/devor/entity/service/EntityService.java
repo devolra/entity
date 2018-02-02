@@ -9,8 +9,6 @@ import de.devor.entity.model.Entity;
  *
  */
 public interface EntityService {
-
-	public static final EntityService instance = new EntityServiceImpl();
 	
 	/**
 	 * Adds the given entity.

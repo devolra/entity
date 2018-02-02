@@ -1,12 +1,7 @@
-package de.devor.entity.model.impl;
+package de.devor.entity.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import de.devor.entity.model.Column;
-import de.devor.entity.model.Entity;
-import de.devor.entity.model.Index;
-import de.devor.entity.model.PrimaryKey;
 
 /**
  * Implementation.
@@ -17,6 +12,7 @@ import de.devor.entity.model.PrimaryKey;
 class EntityImpl implements Entity {
 
 	private String name;
+	private String description;
 	private List<Column> columns = new ArrayList<>();
 	private PrimaryKey primaryKey;
 	private List<Index> indices = new ArrayList<>();
@@ -39,6 +35,26 @@ class EntityImpl implements Entity {
 	@Override
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see de.devor.entity.model.Entity#getDescription()
+	 */
+	@Override
+	public String getDescription() {
+		return description;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see de.devor.entity.model.Entity#setDescription(java.lang.String)
+	 */
+	@Override
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	/*

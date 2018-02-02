@@ -1,7 +1,8 @@
 package de.devor.entity.service;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import de.devor.entity.model.Entity;
 
@@ -13,7 +14,7 @@ import de.devor.entity.model.Entity;
  */
 class EntityServiceImpl implements EntityService {
 
-	private Map<String, Entity> entities = new HashMap<>();
+	private List<Entity> entities = new ArrayList<>();
 
 	/*
 	 * (non-Javadoc)
@@ -23,14 +24,16 @@ class EntityServiceImpl implements EntityService {
 	 */
 	@Override
 	public void addEntity(Entity entity) throws EntityAlreadyExistsException {
-		// Check if the given entity entity alreay exists.
 		String entityName = entity.getName();
-		if (entities.containsKey(entityName)) {
+		// Check if the given entity entity alreay exists.
+
+		List<String> knownEntityNames = entities.stream().map(e -> e.getName()).collect(Collectors.toList());
+		if (knownEntityNames.contains(entityName)) {
 			throw new EntityAlreadyExistsException("The entity " + entityName + " already exists.",
 					new IllegalArgumentException());
 		}
 
-		entities.put(entityName, entity);
+		entities.add(entity);
 	}
 
 }
