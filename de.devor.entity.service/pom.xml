@@ -3,10 +3,16 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>de.devor.entity.service</groupId>
 	<artifactId>de.devor.entity.service</artifactId>
 	<name>de.devor.entity.service</name>
 	<description>Containes a service to work with the entity model.</description>
+
+	<parent>
+		<groupId>de.devor.entity</groupId>
+		<artifactId>de.devor.entity.releng</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../de.devor.entity.releng/pom.xml</relativePath>
+	</parent>
 
 	<dependencies>
 		<dependency>
@@ -15,12 +21,5 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-
-	<parent>
-		<groupId>de.devor.entity</groupId>
-		<artifactId>de.devor.entity.releng</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../de.devor.entity.releng/pom.xml</relativePath>
-	</parent>
 	
 </project>
