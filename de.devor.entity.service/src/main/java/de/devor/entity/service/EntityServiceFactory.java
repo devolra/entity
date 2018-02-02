@@ -15,7 +15,7 @@ public class EntityServiceFactory {
 	 * 
 	 * The service is stateful. So it is a singleton.
 	 * 
-	 * @return
+	 * @returnm The service.
 	 */
 	public static EntityService getEntityService() {
 		if (entityService == null) {

@@ -10,12 +10,34 @@ import java.util.List;
  */
 public interface PrimaryKey {
 
+	/**
+	 * Returns the name.
+	 * 
+	 * @return The name.
+	 */
 	public String getName();
 
+	/**
+	 * Sets the name.
+	 * 
+	 * @param name
+	 *            The name.
+	 */
 	public void setName(String name);
-	
+
+	/**
+	 * Returns the columns.
+	 * 
+	 * @return The columns.
+	 */
 	public List<Column> getColumns();
-	
+
+	/**
+	 * Adds a column.
+	 * 
+	 * @param column
+	 *            The column.
+	 */
 	public void addColumn(Column column);
 
 }
