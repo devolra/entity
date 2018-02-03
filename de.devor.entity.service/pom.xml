@@ -14,12 +14,12 @@
 		<relativePath>../de.devor.entity.releng/pom.xml</relativePath>
 	</parent>
 
+	
 	<dependencies>
 		<dependency>
-			<groupId>de.devor.entity.model</groupId>
+			<groupId>de.devor.entity</groupId>
 			<artifactId>de.devor.entity.model</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-	
 </project>

@@ -1,4 +1,16 @@
-<jsp:include page="./pages/common/header.jsp"/>		
+<%@page import="de.devor.entity.model.PrimaryKey"%>
+<%@page import="de.devor.entity.webapp.common.PageHelper"%>
+<%@page import="de.devor.entity.webapp.business.page.entity.list.EntityListPageHelper"%>
+<%@page import="de.devor.entity.model.Entity"%>
+<%@page import="java.util.List"%>
+<%@page import="de.devor.entity.webapp.common.PageModel"%>
+<%@page import="de.devor.entity.webapp.business.page.entity.list.EntityListPageModel"%>
+<jsp:include page="./pages/common/header.jsp"/>
+<%
+	EntityListPageModel model = (EntityListPageModel)request.getAttribute(PageModel.PAGE_MODEL);
+	List<Entity> entities = model.getEntities();
+	EntityListPageHelper pageHelper = (EntityListPageHelper)request.getAttribute(PageHelper.PAGE_HELPER);
+%>		
 		<table class="ui blue inverted celled table">
 			<thead>
 				<tr>
@@ -9,24 +21,27 @@
 				</tr>
 			</thead>
 			<tbody>
+				<%
+					for (Entity entity : entities) {
+						String name = entity.getName();
+						String description = entity.getDescription();
+						if (description == null) {
+							description = "";
+						}
+						String primaryKeyName = "";
+						PrimaryKey primaryKey = entity.getPrimaryKey();
+						if (primaryKey != null) {
+							primaryKeyName = primaryKey.getName();
+						}
+						String indices = pageHelper.getIndicesNames(entity);
+				%>
 				<tr>
-					<td>a_entity</td>
-					<td>The first entity.</td>
-					<td>a_pk</td>
-					<td>a_index_0, a_index_1</td>
+					<td><%=name%></td>
+					<td><%=description%></td>
+					<td><%=primaryKeyName%></td>
+					<td><%=indices%></td>
 				</tr>
-				<tr>
-					<td>b_entity</td>
-					<td>The second entity.</td>
-					<td>b_pk</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>c_entity</td>
-					<td></td>
-					<td>c_pk</td>
-					<td>c_index_0, c_index_1</td>
-				</tr>
+				<%}%>
 			</tbody>
 		</table>
 <jsp:include page="./pages/common/footer.jsp"/>

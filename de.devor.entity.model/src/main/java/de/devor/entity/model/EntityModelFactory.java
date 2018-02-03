@@ -41,7 +41,9 @@ public class EntityModelFactory {
 	public static PrimaryKey createPrimaryKey(String name, List<Column> columns) {
 		PrimaryKey primaryKey = new PrimaryKeyImpl();
 		primaryKey.setName(name);
-		columns.stream().forEach(c -> primaryKey.addColumn(c));
+		if (columns != null) {
+			columns.stream().forEach(c -> primaryKey.addColumn(c));
+		}
 		return primaryKey;
 	}
 
@@ -60,7 +62,9 @@ public class EntityModelFactory {
 		Index index = new IndexImpl();
 		index.setName(name);
 		index.setAscending(isAscending);
-		columns.stream().forEach(c -> index.addColumn(c));
+		if (columns != null) {
+			columns.stream().forEach(c -> index.addColumn(c));
+		}
 		return index;
 	}
 
@@ -84,9 +88,13 @@ public class EntityModelFactory {
 		Entity entity = new EntityImpl();
 		entity.setName(name);
 		entity.setDescription(description);
-		columns.stream().forEach(c -> entity.addColumn(c));
+		if (columns != null) {
+			columns.stream().forEach(c -> entity.addColumn(c));
+		}
 		entity.setPrimaryKey(primaryKey);
-		indizes.stream().forEach(i -> entity.addIndex(i));
+		if (indizes != null) {
+			indizes.stream().forEach(i -> entity.addIndex(i));
+		}
 		return entity;
 	}
 
