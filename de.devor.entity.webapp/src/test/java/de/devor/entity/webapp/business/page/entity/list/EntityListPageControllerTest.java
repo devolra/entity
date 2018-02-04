@@ -3,11 +3,15 @@ package de.devor.entity.webapp.business.page.entity.list;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Test;
 
 import de.devor.entity.model.Entity;
+import de.devor.entity.service.EntityService;
+import de.devor.entity.service.EntityServiceFactory;
 import de.devor.entity.webapp.common.ApplicationContext;
 import de.devor.entity.webapp.common.ApplicationContextFactory;
 import de.devor.entity.webapp.common.PageController;
@@ -20,6 +24,12 @@ import de.devor.entity.webapp.common.PageController;
  */
 public class EntityListPageControllerTest {
 
+	@After
+	public void after() {
+		EntityService service = EntityServiceFactory.getEntityService();
+		service.removeAllEntities();
+	}
+	
 	@Test
 	public void init() throws Exception {
 		ApplicationContext context = ApplicationContextFactory.getApplicationContext();
@@ -54,6 +64,21 @@ public class EntityListPageControllerTest {
 			assertEquals(expectedPrimaryKey, entity.getPrimaryKey().getName());
 			assertEquals(expectedIndices[i], pageHelper.getIndicesNames(entity));
 		}
+	}
+	
+	@Test
+	public void initNoEntities() throws Exception {
+		ApplicationContext context = ApplicationContextFactory.getApplicationContext();
+
+		PageController controller = EntityListPageFactory.getPageController();
+		controller.init(context);
+
+		EntityListPageModel pageModel = (EntityListPageModel) context.getPageModel();
+		pageModel.setEntities(new ArrayList<>());
+		List<Entity> entities = pageModel.getEntities();
+		assertNotNull(entities);
+		int numberEntities = entities.size();
+		assertEquals(0, numberEntities);
 	}
 
 }

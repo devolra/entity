@@ -23,7 +23,7 @@ public class EntityListPageFactory {
 	 * 
 	 * @param model
 	 *            The model.
-	 * @return @return The page helper-
+	 * @return The page helper.
 	 */
 	public static EntityListPageHelper getPageHelper(EntityListPageModel model) {
 		return new EntityListPageHelperImpl(model);
