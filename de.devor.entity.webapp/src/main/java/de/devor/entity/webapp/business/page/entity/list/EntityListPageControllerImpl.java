@@ -23,6 +23,8 @@ import de.devor.entity.webapp.common.PageModel;
  */
 public class EntityListPageControllerImpl extends AbstractPageController {
 
+	private EntityListPageModel model;
+	
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -31,7 +33,8 @@ public class EntityListPageControllerImpl extends AbstractPageController {
 	@Override
 	protected PageModel getPageModel() throws PageException {
 		try {
-			return initPageModel();
+			model = initPageModel();
+			return model;
 		} catch (EntityAlreadyExistsException e) {
 			throw new PageException("Error creating ht epage model.", e);
 		}
@@ -44,14 +47,14 @@ public class EntityListPageControllerImpl extends AbstractPageController {
 	 */
 	@Override
 	protected PageHelper getPageHelper() {
-		return EntityListPageFactory.getPageHelper();
+		return EntityListPageFactory.getPageHelper(model);
 	}
 
 	//
 	// Private helpers
 	//
 
-	private PageModel initPageModel() throws EntityAlreadyExistsException {
+	private EntityListPageModel initPageModel() throws EntityAlreadyExistsException {
 		EntityListPageModel model = EntityListPageFactory.getPageModel();
 
 		EntityService entityService = EntityServiceFactory.getEntityService();
@@ -61,7 +64,7 @@ public class EntityListPageControllerImpl extends AbstractPageController {
 		entityService.addEntity(getEntity2());
 		entityService.addEntity(getEntity3());
 
-		List<Entity> entities = entityService.getEntities();
+		List<Entity> entities = entityService.getEntities();		
 		model.setEntities(entities);
 
 		return model;

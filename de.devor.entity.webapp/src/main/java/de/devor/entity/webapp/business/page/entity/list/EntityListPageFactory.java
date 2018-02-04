@@ -21,10 +21,12 @@ public class EntityListPageFactory {
 	/**
 	 * Returns the page helper.
 	 * 
+	 * @param model
+	 *            The model.
 	 * @return The page helper-
 	 */
-	public static EntityListPageHelper getPageHelper() {
-		return new EntityListPageHelperImpl();
+	public static EntityListPageHelper getPageHelper(EntityListPageModel model) {
+		return new EntityListPageHelperImpl(model);
 	}
 
 	/**
