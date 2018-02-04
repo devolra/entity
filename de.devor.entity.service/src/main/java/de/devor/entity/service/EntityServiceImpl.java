@@ -36,4 +36,24 @@ class EntityServiceImpl implements EntityService {
 		entities.add(entity);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see de.devor.entity.service.EntityService#getEntities()
+	 */
+	@Override
+	public List<Entity> getEntities() {
+		return entities;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see de.devor.entity.service.EntityService#removeAllEntities()
+	 */
+	@Override
+	public void removeAllEntities() {
+		entities.clear();
+	}
+
 }

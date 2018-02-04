@@ -1,5 +1,7 @@
 package de.devor.entity.service;
 
+import java.util.List;
+
 import de.devor.entity.model.Entity;
 
 /**
@@ -9,7 +11,7 @@ import de.devor.entity.model.Entity;
  *
  */
 public interface EntityService {
-	
+
 	/**
 	 * Adds the given entity.
 	 * 
@@ -19,5 +21,17 @@ public interface EntityService {
 	 *             If an entity with the same name already exists.
 	 */
 	public void addEntity(Entity entity) throws EntityAlreadyExistsException;
+
+	/**
+	 * Returns the entities.
+	 * 
+	 * @return The entities.
+	 */
+	public List<Entity> getEntities();
+
+	/**
+	 * Removes all entities.
+	 */
+	public void removeAllEntities();
 
 }
