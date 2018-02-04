@@ -13,6 +13,14 @@ import de.devor.entity.model.Index;
 class EntityListPageHelperImpl implements EntityListPageHelper {
 	
 	private static final long serialVersionUID = -2680989179741508758L;
+	
+	
+	/**
+	 * Constructor.
+	 * @param model The model.
+	 */
+	public EntityListPageHelperImpl(EntityListPageModel model) {
+	}
 
 	/* (non-Javadoc)
 	 * @see de.devor.entity.webapp.common.PageHelper#getPageTitle()

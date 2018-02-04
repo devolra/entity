@@ -18,8 +18,9 @@ public abstract class AbstractPageController implements PageController {
 	@Override
 	public void init(ApplicationContext applicationContext) throws PageException {
 		// Create page model and page helper and update the application context.
-		applicationContext.setPageModel(getPageModel());
-		applicationContext.setPageHelper(getPageHelper());
+		PageModel model = getPageModel();
+		applicationContext.setPageModel(model);
+		applicationContext.setPageHelper(getPageHelper(model));
 	}
 
 	/**
@@ -44,6 +45,16 @@ public abstract class AbstractPageController implements PageController {
 	 * @throws PageException
 	 *             If an error oiccurs creating the page helper.
 	 */
-	protected abstract PageHelper getPageHelper() throws PageException;
+
+	/**
+	 * Callback to create the page helper.
+	 * 
+	 * @param model
+	 *            The model.
+	 * @return The page helper.
+	 * @throws PageException
+	 *             If an error oiccurs creating the page helper.
+	 */
+	protected abstract PageHelper getPageHelper(PageModel model) throws PageException;
 
 }
