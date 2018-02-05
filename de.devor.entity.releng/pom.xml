@@ -5,7 +5,6 @@
 
 	<groupId>de.devor.entity</groupId>
 	<artifactId>de.devor.entity.releng</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>de.devor.entity.releng</name>
 	<description>Releng modul for the entity project. This is the parent POM for all other modules.</description>
@@ -38,4 +37,5 @@
 		</dependency>
 	</dependencies>
 
+	<version>1.1.0</version>
 </project>

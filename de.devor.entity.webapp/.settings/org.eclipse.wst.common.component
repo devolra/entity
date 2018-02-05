@@ -3,12 +3,6 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <dependent-module archiveName="de.devor.entity.service-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/de.devor.entity.service/de.devor.entity.service">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="de.devor.entity.model-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/de.devor.entity.model/de.devor.entity.model">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="java-output-path" value="/de.devor.entity.webapp/build/classes"/>
         <property name="context-root" value="entity"/>
     </wb-module>
