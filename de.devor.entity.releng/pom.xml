@@ -23,9 +23,10 @@
 	</build>
 
 	<modules>
+		<module>../de.devor.pageflow.mvc.core</module>
 		<module>../de.devor.entity.model</module>
 		<module>../de.devor.entity.service</module>
-		<module>../de.devor.entity.webapp</module>
+		<module>../de.devor.entity.webapp</module>		
 	</modules>
 
 	<dependencies>

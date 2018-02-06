@@ -1,4 +1,4 @@
-package de.devor.entity.webapp.common;
+package de.devor.pageflow.mvc.core;
 
 /**
  * Exception that indicates that an error occurred initializing the page model

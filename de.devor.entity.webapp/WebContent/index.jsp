@@ -1,9 +1,9 @@
+<%@page import="de.devor.pageflow.mvc.core.PageHelper"%>
+<%@page import="de.devor.pageflow.mvc.core.PageModel"%>
 <%@page import="de.devor.entity.model.PrimaryKey"%>
-<%@page import="de.devor.entity.webapp.common.PageHelper"%>
 <%@page import="de.devor.entity.webapp.business.page.entity.list.EntityListPageHelper"%>
 <%@page import="de.devor.entity.model.Entity"%>
 <%@page import="java.util.List"%>
-<%@page import="de.devor.entity.webapp.common.PageModel"%>
 <%@page import="de.devor.entity.webapp.business.page.entity.list.EntityListPageModel"%>
 <jsp:include page="./pages/common/header.jsp"/>
 <%

@@ -1,6 +1,6 @@
-<%@page import="de.devor.entity.webapp.common.PageModel"%>
-<%@page import="de.devor.entity.webapp.common.PageHelper"%>
-<%@page import="de.devor.entity.webapp.common.ApplicationContext"%>
+<%@page import="de.devor.pageflow.mvc.core.PageModel"%>
+<%@page import="de.devor.pageflow.mvc.core.PageHelper"%>
+<%@page import="de.devor.pageflow.mvc.core.ApplicationContext"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%

@@ -43,8 +43,13 @@
 		</dependency>
 		<dependency>
 			<groupId>de.devor.entity</groupId>
+			<artifactId>de.devor.pageflow.mvc.core</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.devor.entity</groupId>
 			<artifactId>de.devor.entity.service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 

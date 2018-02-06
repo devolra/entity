@@ -3,7 +3,7 @@ package de.devor.entity.webapp.business.page.entity.list;
 import java.util.List;
 
 import de.devor.entity.model.Entity;
-import de.devor.entity.webapp.common.PageHelper;
+import de.devor.pageflow.mvc.core.PageHelper;
 
 /**
  * Interface of the page helper for the list of entities.

@@ -12,10 +12,10 @@ import de.devor.entity.model.PrimaryKey;
 import de.devor.entity.service.EntityAlreadyExistsException;
 import de.devor.entity.service.EntityService;
 import de.devor.entity.service.EntityServiceFactory;
-import de.devor.entity.webapp.common.AbstractPageController;
-import de.devor.entity.webapp.common.PageException;
-import de.devor.entity.webapp.common.PageHelper;
-import de.devor.entity.webapp.common.PageModel;
+import de.devor.pageflow.mvc.core.AbstractPageController;
+import de.devor.pageflow.mvc.core.PageException;
+import de.devor.pageflow.mvc.core.PageHelper;
+import de.devor.pageflow.mvc.core.PageModel;
 
 /**
  * Implementation of the controller.

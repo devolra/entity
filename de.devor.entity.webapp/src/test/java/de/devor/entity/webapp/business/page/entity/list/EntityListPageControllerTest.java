@@ -12,9 +12,9 @@ import org.junit.Test;
 import de.devor.entity.model.Entity;
 import de.devor.entity.service.EntityService;
 import de.devor.entity.service.EntityServiceFactory;
-import de.devor.entity.webapp.common.ApplicationContext;
-import de.devor.entity.webapp.common.ApplicationContextFactory;
-import de.devor.entity.webapp.common.PageController;
+import de.devor.pageflow.mvc.core.ApplicationContext;
+import de.devor.pageflow.mvc.core.ApplicationContextFactory;
+import de.devor.pageflow.mvc.core.PageController;
 
 /**
  * Tests for the controller.

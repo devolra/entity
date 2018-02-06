@@ -1,4 +1,4 @@
-package de.devor.entity.webapp.common;
+package de.devor.pageflow.mvc.core;
 
 /**
  * Marker interface for all page controllers.

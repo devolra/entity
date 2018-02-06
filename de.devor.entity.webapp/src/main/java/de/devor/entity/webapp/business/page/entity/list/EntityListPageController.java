@@ -1,6 +1,6 @@
 package de.devor.entity.webapp.business.page.entity.list;
 
-import de.devor.entity.webapp.common.PageController;
+import de.devor.pageflow.mvc.core.PageController;
 
 /**
  * Interface of the controller.

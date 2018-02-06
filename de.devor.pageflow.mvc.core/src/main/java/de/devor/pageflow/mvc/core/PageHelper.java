@@ -1,4 +1,4 @@
-package de.devor.entity.webapp.common;
+package de.devor.pageflow.mvc.core;
 
 import java.io.Serializable;
 

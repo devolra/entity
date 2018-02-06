@@ -3,6 +3,12 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="de.devor.pageflow.mvc.core-1.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/de.devor.pageflow.mvc.core/de.devor.pageflow.mvc.core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="de.devor.entity.service-1.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/de.devor.entity.service/de.devor.entity.service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/de.devor.entity.webapp/build/classes"/>
         <property name="context-root" value="entity"/>
     </wb-module>

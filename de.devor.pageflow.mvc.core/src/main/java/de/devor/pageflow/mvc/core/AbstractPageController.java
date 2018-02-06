@@ -1,4 +1,4 @@
-package de.devor.entity.webapp.common;
+package de.devor.pageflow.mvc.core;
 
 /**
  * Can be used by page controllers that create a page model and a page helper.

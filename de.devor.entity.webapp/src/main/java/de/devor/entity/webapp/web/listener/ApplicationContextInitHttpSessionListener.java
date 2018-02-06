@@ -6,10 +6,10 @@ import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
 import de.devor.entity.webapp.business.page.entity.list.EntityListPageFactory;
-import de.devor.entity.webapp.common.ApplicationContext;
-import de.devor.entity.webapp.common.ApplicationContextFactory;
-import de.devor.entity.webapp.common.PageController;
-import de.devor.entity.webapp.common.PageException;
+import de.devor.pageflow.mvc.core.ApplicationContext;
+import de.devor.pageflow.mvc.core.ApplicationContextFactory;
+import de.devor.pageflow.mvc.core.PageController;
+import de.devor.pageflow.mvc.core.PageException;
 
 /**
  * HttpSessionListener to iniitialize the ApplicationContext when the session is
