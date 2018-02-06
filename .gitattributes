@@ -1,1 +1,6 @@
-/de.devor.entity.webapp/WebContent/img filter=lfs diff=lfs merge=lfs -text
+de.devor.entity.webapp/WebContent/img/ubuntu-logo32.png filter=lfs diff=lfs merge=lfs -text
+de.devor.entity.webapp/WebContent/img/docker-layer.png filter=lfs diff=lfs merge=lfs -text
+de.devor.entity.webapp/WebContent/img/imacpro-blue-desktop.jpg filter=lfs diff=lfs merge=lfs -text
+de.devor.entity.webapp/WebContent/img/imacpro-colored-desktop.jpg filter=lfs diff=lfs merge=lfs -text
+de.devor.entity.webapp/WebContent/img/macpro-yellow-desktop.png filter=lfs diff=lfs merge=lfs -text
+de.devor.entity.webapp/WebContent/img/ubuntu-desktop-wallpaper.jpg filter=lfs diff=lfs merge=lfs -text
