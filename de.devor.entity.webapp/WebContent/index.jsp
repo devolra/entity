@@ -1,10 +1,10 @@
+<%@page import="de.devor.entity.pageflow.entity.list.EntityListPageHelper"%>
+<%@page import="de.devor.entity.pageflow.entity.list.EntityListPageModel"%>
 <%@page import="de.devor.pageflow.mvc.core.PageHelper"%>
 <%@page import="de.devor.pageflow.mvc.core.PageModel"%>
 <%@page import="de.devor.entity.model.PrimaryKey"%>
-<%@page import="de.devor.entity.webapp.business.page.entity.list.EntityListPageHelper"%>
 <%@page import="de.devor.entity.model.Entity"%>
 <%@page import="java.util.List"%>
-<%@page import="de.devor.entity.webapp.business.page.entity.list.EntityListPageModel"%>
 <jsp:include page="./pages/common/header.jsp"/>
 <%
 	EntityListPageModel model = (EntityListPageModel)request.getAttribute(PageModel.PAGE_MODEL);

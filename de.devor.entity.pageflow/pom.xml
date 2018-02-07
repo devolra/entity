@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>de.devor.entity.pageflow</artifactId>
+	<name>de.devor.entity.pageflow</name>
+	<description>Contains the page flow components (model, view controls).</description>
+	
+	<parent>
+		<groupId>de.devor.entity</groupId>
+		<artifactId>de.devor.entity.releng</artifactId>
+		<relativePath>../de.devor.entity.releng/pom.xml</relativePath>
+		<version>1.1.0</version>
+	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>de.devor.pageflow</groupId>
+			<artifactId>de.devor.pageflow.mvc.core</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>de.devor.entity</groupId>
+			<artifactId>de.devor.entity.service</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+	</dependencies>
+
+</project>

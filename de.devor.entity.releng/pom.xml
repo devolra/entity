@@ -27,6 +27,8 @@
 	<modules>		
 		<module>../de.devor.entity.model</module>
 		<module>../de.devor.entity.service</module>
+		<module>../de.devor.entity.pageflow</module>
+		<module>../de.devor.entity.web</module>
 		<module>../de.devor.entity.webapp</module>		
 	</modules>
 
