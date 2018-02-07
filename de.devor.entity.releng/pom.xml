@@ -8,6 +8,8 @@
 	<packaging>pom</packaging>
 	<name>de.devor.entity.releng</name>
 	<description>Releng modul for the entity project. This is the parent POM for all other modules.</description>
+	
+	<version>1.1.0</version>
 
 	<build>
 		<plugins>
@@ -22,8 +24,7 @@
 		</plugins>
 	</build>
 
-	<modules>
-		<module>../de.devor.pageflow.mvc.core</module>
+	<modules>		
 		<module>../de.devor.entity.model</module>
 		<module>../de.devor.entity.service</module>
 		<module>../de.devor.entity.webapp</module>		
@@ -37,6 +38,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<version>1.1.0</version>
+	
 </project>
