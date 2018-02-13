@@ -14,4 +14,8 @@ public interface EntityListPageController extends PageController {
 	// No changes happen on the master.
 	// Then this change is merged in the master branch.
 	
+	// This is another change on branch feature1.
+	// Changes happened on the master.
+	// Then this change is merged in the master.
+	
 }
