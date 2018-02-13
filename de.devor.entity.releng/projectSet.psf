@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,https://github.com/devolra/entity.git,master,de.devor.entity.model"/>
+<project reference="1.0,https://github.com/devolra/entity.git,master,de.devor.entity.pageflow"/>
+<project reference="1.0,https://github.com/devolra/entity.git,master,de.devor.entity.releng"/>
+<project reference="1.0,https://github.com/devolra/entity.git,master,de.devor.entity.service"/>
+<project reference="1.0,https://github.com/devolra/entity.git,master,de.devor.entity.web"/>
+<project reference="1.0,https://github.com/devolra/entity.git,master,de.devor.entity.webapp"/>
+</provider>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1518518215718_5" label="Controller" name="Controller">
+<item elementID="=de.devor.entity.service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.devor.entity.pageflow" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1518518041965_1" label="Model" name="Model">
+<item elementID="=de.devor.entity.model" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1518518147035_4" label="Releng" name="Releng">
+<item elementID="=de.devor.entity.releng" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1518518092099_2" label="Web" name="Web">
+<item elementID="=de.devor.entity.web" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.devor.entity.webapp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+</psf>
