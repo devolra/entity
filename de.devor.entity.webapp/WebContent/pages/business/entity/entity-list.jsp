@@ -5,7 +5,7 @@
 <%@page import="de.devor.entity.model.PrimaryKey"%>
 <%@page import="de.devor.entity.model.Entity"%>
 <%@page import="java.util.List"%>
-<jsp:include page="./pages/common/header.jsp"/>
+<jsp:include page="../../../pages/common/header.jsp"/>
 <%
 	EntityListPageModel model = (EntityListPageModel)request.getAttribute(PageModel.PAGE_MODEL);
 	List<Entity> entities = model.getEntities();
@@ -44,4 +44,4 @@
 				<%}%>
 			</tbody>
 		</table>
-<jsp:include page="./pages/common/footer.jsp"/>
+<jsp:include page="../../../pages/common/footer.jsp"/>
