@@ -10,4 +10,6 @@ import de.devor.pageflow.mvc.core.PageController;
  */
 public interface EntityListPageController extends PageController {
 	
+	// Feature that is on the master but not yet merged in the branch feature-a
+	
 }
