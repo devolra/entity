@@ -8,12 +8,6 @@ import de.devor.pageflow.mvc.core.PageController;
  * @author orapka
  *
  */
-public interface EntityListPageController extends PageController {
-
-	// A chage to test the WebHook (post receive hook) for a Jenkins nuild at GitHub.
-	
-	// Another test for the WebHook.
-	
-	// And another try...	
+public interface EntityListPageController extends PageController {	
 	
 }
