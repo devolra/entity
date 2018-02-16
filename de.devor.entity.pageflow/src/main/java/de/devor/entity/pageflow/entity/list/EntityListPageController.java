@@ -10,6 +10,4 @@ import de.devor.pageflow.mvc.core.PageController;
  */
 public interface EntityListPageController extends PageController {
 	
-	// A change to test the Jenkins Git Publisher.
-	
 }
