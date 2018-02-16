@@ -9,5 +9,8 @@ import de.devor.pageflow.mvc.core.PageController;
  *
  */
 public interface EntityListPageController extends PageController {
-	
+
+	// A new feature to test a pull request a GitHub that triggers a Jenkins-Job to build the feature-branch and a merge
+	// from the feature-branch into the master.
+
 }

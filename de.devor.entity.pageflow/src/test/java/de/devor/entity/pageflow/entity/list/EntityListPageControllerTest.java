@@ -32,7 +32,7 @@ public class EntityListPageControllerTest {
 		EntityService service = EntityServiceFactory.getEntityService();
 		service.removeAllEntities();
 	}
-	
+
 	@Test
 	public void init() throws Exception {
 		ApplicationContext context = ApplicationContextFactory.getApplicationContext();
@@ -68,7 +68,7 @@ public class EntityListPageControllerTest {
 			assertEquals(expectedIndices[i], pageHelper.getIndicesNames(entity));
 		}
 	}
-	
+
 	@Test
 	public void initNoEntities() throws Exception {
 		ApplicationContext context = ApplicationContextFactory.getApplicationContext();
