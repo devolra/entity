@@ -25,6 +25,9 @@ import de.devor.pageflow.mvc.core.PageModel;
  */
 public class EntityListPageControllerImpl extends AbstractPageController implements EntityListPageController {
 
+	// To test the merge from master to the feature branch.
+	// And the Jenkins build of the feature branch with merging from master into the feature branch.
+	
 	private EntityListPageModel model;
 
 	/*
