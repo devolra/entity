@@ -12,4 +12,6 @@ public interface EntityListPageController extends PageController {
 
 	// This should be a new feature that is implemented on the feature branch feature-a
 	
+	// This is another new feature on this feature branch that gets a new pull request.
+	
 }
