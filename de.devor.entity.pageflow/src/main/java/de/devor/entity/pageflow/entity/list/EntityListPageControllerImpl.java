@@ -29,6 +29,8 @@ public class EntityListPageControllerImpl extends AbstractPageController impleme
 	
 	// Another change in the master branch that should automatically be merged to the develop branch.
 	
+	// And a third change in the master branch that should automatically be merged to the develop branch.
+	
 	private EntityListPageModel model;
 
 	/*
