@@ -25,7 +25,9 @@ import de.devor.pageflow.mvc.core.PageModel;
  */
 public class EntityListPageControllerImpl extends AbstractPageController implements EntityListPageController {
 	
-	// This is a change in the master branch that should automatically be merged to the develop branch. 
+	// This is a change in the master branch that should automatically be merged to the develop branch.
+	
+	// Another change in the master branch that should automatically be merged to the develop branch.
 	
 	private EntityListPageModel model;
 
